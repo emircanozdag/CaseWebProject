@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using WebProject.Models
+@model List<Personel>
+<table id="tbl1" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var personel in Model)
+        {
+<tr>
+    <th>@personel.perName</th>
+    <td>@personel.perSurname</td>
+</tr>}
+    </tbody>
+</table>
